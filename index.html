@@ -1,4 +1,6 @@
 
+
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -116,6 +118,21 @@
     /* core */
     .core{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:#fff}.core-row{display:grid;grid-template-columns:1fr 1fr;min-height:440px;border-bottom:1px solid var(--line)}.core-row:last-child{border-bottom:0}.core-row:nth-child(even) .core-img{order:2}.core-img{position:relative;min-height:420px;background:var(--forest)}.core-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.94}.num{position:absolute;left:24px;top:24px;width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:rgba(19,32,22,.72);color:#fff;border:1px solid rgba(255,255,255,.24);font-weight:900}.core-body{padding:54px 56px;display:flex;flex-direction:column;justify-content:center}.core-kicker{font-size:11px;color:var(--gold2);letter-spacing:.17em;text-transform:uppercase;font-weight:900;margin-bottom:12px}.core-body h3{font-size:30px;margin-bottom:8px}.core-en{font-size:13px;color:#8a8174;letter-spacing:.05em;margin-bottom:22px}.core-body p{font-size:14.5px;color:var(--muted);line-height:1.86}.meta{display:grid;gap:12px;margin-top:22px}.meta div{display:grid;grid-template-columns:84px 1fr;gap:12px;font-size:13.5px;color:var(--muted)}.meta b{color:var(--ink)}
 
+
+    /* gallery zone */
+    .gallery-hero{position:relative;min-height:430px;border-radius:var(--radius);overflow:hidden;background:#091009;box-shadow:0 22px 70px rgba(0,0,0,.28);margin:18px 0 26px;border:1px solid rgba(255,255,255,.12)}
+    .gallery-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.56;filter:saturate(.92) contrast(1.06)}
+    .gallery-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,10,7,.94),rgba(19,32,22,.64),rgba(19,32,22,.18))}
+    .gallery-hero-copy{position:relative;z-index:2;max-width:680px;padding:58px}
+    .gallery-hero-copy small{display:block;color:var(--gold);font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:900;margin-bottom:14px}
+    .gallery-hero-copy h3{font-size:clamp(27px,3.7vw,46px);color:#fff;line-height:1.2;margin-bottom:16px}
+    .gallery-hero-copy p{font-size:15.5px;color:rgba(255,255,255,.68);line-height:1.85}
+    .gallery-cards .card{background:rgba(255,255,255,.065);border-color:rgba(255,255,255,.13)}
+    .gallery-cards .card h3{color:#fff}
+    .gallery-cards .card p{color:rgba(255,255,255,.64)}
+    .gallery-table table{box-shadow:none}
+    .gallery-table td{background:#fff}
+
     /* roadmap */
     .roadmap{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px}.step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;position:relative}.step:before{content:attr(data-step);display:block;color:var(--gold2);font-weight:900;letter-spacing:.12em;font-size:12px;margin-bottom:12px}.step h3{font-size:19px;margin-bottom:9px}.step p{font-size:13.5px;color:var(--muted)}
 
@@ -129,7 +146,10 @@
     .cta{background:linear-gradient(135deg,var(--forest),#081009);color:#fff;text-align:center;padding:106px 0}.cta h2{font-size:clamp(34px,5vw,58px);color:#fff;margin-bottom:16px}.cta p{max-width:660px;margin:0 auto 36px;color:rgba(255,255,255,.62);font-size:17px}.cta-buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.footer{background:#070a07;color:rgba(255,255,255,.36);padding:40px 0;font-size:12px}.footer-inner{display:flex;justify-content:space-between;gap:24px;align-items:flex-end}.footer b{color:rgba(255,255,255,.72)}
 
     @media(max-width:980px){.section-head,.grid-2,.grid-3,.grid-4,.space-grid,.core-row,.partner-grid,.roadmap,.risk-grid{grid-template-columns:1fr}.hero-top{margin-bottom:70px}.hero-stats,.metric-grid{grid-template-columns:1fr 1fr}.core-row:nth-child(even) .core-img{order:0}.nav-cta{display:none}.img-pair{grid-template-columns:1fr}.section{padding:72px 0}.hero-inner{padding:70px 0 56px}.footer-inner{align-items:flex-start;flex-direction:column}.image-stack img,.image-stack img:first-child{height:260px}}
-    @media(max-width:640px){.container{width:min(100% - 32px,var(--max))}.hero-stats,.metric-grid{grid-template-columns:1fr}.nav-inner{width:calc(100% - 22px)}.brand{font-size:11px}.hero-top{font-size:10px}.tag{font-size:11px}.core-body{padding:34px 26px}.core-img{min-height:260px}.section-head{gap:22px}.quote{padding:28px}.quote p{font-size:18px}.metric{padding:22px}.pitem,.meta{grid-template-columns:1fr}.img-pair figure{min-height:240px}th,td{padding:12px 14px}.space b{font-size:34px}}
+    @media(max-width:640px){
+      .gallery-hero{min-height:340px}
+      .gallery-hero-copy{padding:34px 26px}
+.container{width:min(100% - 32px,var(--max))}.hero-stats,.metric-grid{grid-template-columns:1fr}.nav-inner{width:calc(100% - 22px)}.brand{font-size:11px}.hero-top{font-size:10px}.tag{font-size:11px}.core-body{padding:34px 26px}.core-img{min-height:260px}.section-head{gap:22px}.quote{padding:28px}.quote p{font-size:18px}.metric{padding:22px}.pitem,.meta{grid-template-columns:1fr}.img-pair figure{min-height:240px}th,td{padding:12px 14px}.space b{font-size:34px}}
     @media print{.nav,.progress{display:none}.hero{min-height:auto}.section{page-break-inside:avoid;padding:42px 0}.card,.metric-grid,.core,.table-wrap,.partner,.quote{box-shadow:none}.hero:before{opacity:.25}}
   </style>
 </head>
@@ -169,6 +189,7 @@
         <a href="#about">회사역량</a>
         <a href="#market">시장기회</a>
         <a href="#space">공간구성</a>
+        <a href="#gallery">갤러리존</a>
         <a href="#core">핵심체험</a>
         <a href="#business">수익모델</a>
         <a href="#partner">파트너십</a>
@@ -290,6 +311,90 @@
         <figure><img src="https://mediscent01-lang.github.io/company-intro/assets/04-kwellness-retail-corridor.webp" alt="K-Wellness Retail Corridor"><figcaption>K-Wellness Retail Corridor — 체험과 구매를 연결하는 동선</figcaption></figure>
       </div>
       <div class="notice ok"><span>✦</span><div><b>시공 원칙:</b> 고정 목공을 최소화하고 이동형 집기·가변형 존을 활용합니다. 시즌별 팝업, 전시 교체, SKU 교체가 쉬워야 재방문 이유가 생깁니다.</div></div>
+    </div>
+  </section>
+
+
+  <section class="section dark" id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">K-Craft Gallery Zone</div>
+          <h2 class="title">지하로 내려오게 만드는 첫 번째 이유, 갤러리 존.</h2>
+        </div>
+        <p class="lead">K-Craft Gallery Zone은 PLANT WELLNESS GROUND의 무료 유입 장치이자 인사동 상권과 가장 잘 맞는 전시형 콘텐츠입니다. 단순 포토존이 아니라 한국적 조형미, 공예, 향, 뷰티를 연결하는 입구 콘텐츠로 설계합니다.</p>
+      </div>
+
+      <div class="gallery-hero">
+        <img src="https://mediscent01-lang.github.io/company-intro/assets/02-kcraft-gallery-zone.webp" alt="K-Craft Gallery Zone">
+        <div class="gallery-hero-copy">
+          <small>K-Craft · Photo · Scent · Retail</small>
+          <h3>한국의 조형미를 체험하고, 사진으로 남기고, 향과 제품으로 구매하게 만드는 전환형 갤러리</h3>
+          <p>갓, 쪽두리, 청자 비색, 빙렬 텍스처, 전통 공예 오브제를 활용해 외국인 관광객이 직관적으로 이해할 수 있는 K-Style 장면을 만듭니다.</p>
+        </div>
+      </div>
+
+      <div class="grid-4 gallery-cards">
+        <div class="card">
+          <div class="icon">🏛️</div>
+          <h3>K-Craft 전시</h3>
+          <p>한국 전통 조형, 공예 오브제, 향수 패키지, PLANT 제품을 하나의 큐레이션으로 전시해 인사동의 정체성과 연결합니다.</p>
+        </div>
+        <div class="card">
+          <div class="icon">📸</div>
+          <h3>무료 포토존</h3>
+          <p>갓·쪽두리·청자 비색 무드의 촬영 장면을 제공해 B1 방문 명분을 만들고 SNS 확산을 유도합니다.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🎫</div>
+          <h3>QR 쿠폰 전환</h3>
+          <p>포토존 촬영 후 QR 쿠폰을 제공해 향수 클래스, 족욕, K-Beauty Select 구매로 연결합니다.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🛍️</div>
+          <h3>전시형 판매</h3>
+          <p>전시 오브제와 연계된 향수, 사쉐, 홈스파 키트, K-Beauty 제품을 자연스럽게 판매합니다.</p>
+        </div>
+      </div>
+
+      <div class="table-wrap gallery-table">
+        <table>
+          <thead>
+            <tr><th>구성</th><th>역할</th><th>운영 방식</th><th>기대 효과</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>K-Craft 오브제 전시</b></td>
+              <td>인사동 정체성 강화</td>
+              <td>월/분기 단위 테마 교체</td>
+              <td>재방문 명분, 제휴 작가/브랜드 확장</td>
+            </tr>
+            <tr>
+              <td><b>K-Style 포토존</b></td>
+              <td>무료 유입 장치</td>
+              <td>입구 인근 배치, SNS 촬영 최적화</td>
+              <td>B1 진입률 상승, 바이럴 콘텐츠 확보</td>
+            </tr>
+            <tr>
+              <td><b>향·공예 스토리월</b></td>
+              <td>브랜드 세계관 전달</td>
+              <td>SHIFTI 향, 청자 비색, 빙렬, 갓 모티프 설명</td>
+              <td>체험 예약 설득, 고급 이미지 강화</td>
+            </tr>
+            <tr>
+              <td><b>전시 연계 MD</b></td>
+              <td>리테일 전환</td>
+              <td>전시 옆 소량 진열, QR 결제/예약 연동</td>
+              <td>충동구매, 선물 구매, 객단가 상승</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="notice">
+        <span>✦</span>
+        <div><b>갤러리 존의 핵심:</b> 무료 관람 공간처럼 보이지만 실제 목적은 B1 유입, 체험 예약, K-Beauty 구매 전환입니다. 따라서 전시는 예쁘기만 해서는 안 되고, 반드시 QR 쿠폰·예약·구매 동선과 연결되어야 합니다.</div>
+      </div>
     </div>
   </section>
 
@@ -468,7 +573,7 @@
       
       <div class="cta-buttons">
         <a class="btn gold" href="tel:07043654807">📞 070-4365-4807</a>
-        <a class="btn dark" href="mailto:justina0726@gmail.comr">✉ bobos@classicmind.co.kr</a>
+        <a class="btn dark" href="mailto:justina0726@gmail.com">✉ justina0726@gmail.com</a>
         <a class="btn dark" href="https://mediscent.co.kr" target="_blank" rel="noopener">🌐 mediscent.co.kr</a>
       </div>
     </div>
